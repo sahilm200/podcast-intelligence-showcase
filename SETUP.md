@@ -6,7 +6,7 @@ This is a source snapshot. Supply your own configuration locally and never commi
 
 1. Create and activate a Python virtual environment.
 2. Install the package with `python -m pip install -e .`.
-3. Use `p3 --help` for CLI commands. `p3 init` initializes local processor directories and configuration.
+3. Use `p3 --help` for CLI commands. `p3 init` creates local processor directories and its database. The original feed configuration and example template are excluded, so create your own `config/feeds.yaml` before running feed-processing commands; `init` cannot copy an omitted template.
 4. Local audio processing requires FFmpeg. Local model/transcription options can require Ollama and optional Python dependencies, such as the `local` or `macos` extras.
 
 ## API and worker
